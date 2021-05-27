@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name         = 'WeatherChannel'
   spec.version      = '0.0.1'
-  spec.license      = { :type => 'BSD' }
+  spec.license      = { :type => "MIT", :file => "MIT License" }
   spec.description  = <<-DESC
   A small demo library for something very simple as weather.
   						DESC
