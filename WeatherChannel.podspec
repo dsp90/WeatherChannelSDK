@@ -12,6 +12,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => 'https://github.com/dsp90/WeatherChannelSDK.git', :tag => '0.0.1' }
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
-  spec.vendored_frameworks = 'xcframework/WeatherChannel.xcframework', 'xcframework/WeatherChannel.xcframework/ios-arm64/WeatherChannel.framework', 'xcframework/WeatherChannel.xcframework/ios-arm64_x86_64-simulator/WeatherChannel.framework'
+  spec.ios.vendored_frameworks = 'xcframework/WeatherChannel.xcframework'
+  spec.preserve_path = 'xcframework/WeatherChannel.xcframework/ios-arm64/*.framework', 'xcframework/WeatherChannel.xcframework/ios-arm64_x86_64-simulator/*.framework'
   spec.swift_version    = '5.0'
 end
